@@ -11,6 +11,8 @@
 \pubyear{2020}
 \newtheorem{theorem}{Theorem}
 \newtheorem{lemma}{Lemma}
+\usepackage{ragged2e}
+\justifying
 
 \setcounter{secnumdepth}{0}
 
@@ -23,6 +25,7 @@
 \markboth{Abraham Jerry Kakooza et al.}{Design of A Machine Learning Based System for Pharmaceutical Purchases}
 
 \begin{abstract}
+\justifying
     Using a univariate time series analysis, we validate  different methods and approaches related to time series data preparation, analysis and forecast with an aim to facilitate recommending sales and marketing strategies based on trend/seasonality effects and forecasting sales of top five selling pharmaceutical products with diverse characteristics, such as stationarity, seasonality, amount of residuals and sales data variance.All  these  analyses  and forecasts are made on a small scale, for an individual pharmacy located in Luweero District-Uganda.
     
 \end{abstract}
@@ -32,10 +35,20 @@
 
 \section{Introduction}
 
-The introduction should provide background information (including relevant references) and should indicate the purpose of the manuscript. Cite relevant work by others, including research outside your company. Place your work in perspective by referring to other research papers. Inclusion of statements at the end of the introduction regarding the organization of the manuscript can be helpful to the reader.
+One of the responsibilities of pharmacies in Uganda is to have a minimum stock of medicines.This ensures patients can have it when prescribed.
+
+In addition to this, pharmacies need to get a good forecast of the medication needs due to the short term validity of many medicines and the need to control stock levels.This avoids excessive costs and loss of customers due to stock outages.
+A good sales forecast is usually associated with striking a balance between stock costs and adequate satisfaction of customer demand.
+
+People act on the basis of forecasting models whether they are on paper or in their heads. You are better off quantifying these estimations so you can discuss them rationally as opposed to making them based on intuition.
+
+To specific case of pharmacies in Uganda, the problem is of particular importance due to the short cycle life of many products and the importance of quality which is in turn strongly linked to public health.
+
+Before digital technology dominated the world, the forecasting process was done manually by experienced individuals in the domain. This intuition required a lot of experience and was prone to error. Such a multifaceted problem started to realize the need for automating the pharmacy sales forecasting process. Research has been carried out with statistical, machine learning, deep learning and ensemble techniques to achieve more accurate sales forecasts. [1]
+
+During our research study of Soteria Pharmacy procurement process with an interview of Ms.Brenda the incharge of this, we realised she uses personal judgement of current stock levels athand and the rate at which people come in to ask for a ceratin drug then determine how much more stock should be purchased.Given her difficulties in accurately predicting the future sales,this report explores the product sales forecast at the indiviual level of this Pharmacy.I made a forecast for 5 sold drugs.The forecast was based on analysis of historical data for a period of 24 months and future results analyses of 50 days determined.ARIMA and LSTM methods were used in the sales forecast of which the best model was recommended including a conclusive way of improving our results.
 
 
-This document is a template for \LaTeX. If you are reading a paper or PDF version of this document, please download the electronic file, trans\_jour.tex, from the IEEE Web site at \url{http://www.ieee.org/authortools/trans_jour.tex} so you can use it to prepare your manuscript. If you would prefer to use LaTeX, download IEEE's LaTeX style and sample files from the same Web page. You can also explore using the Overleaf editor at {https://www.overleaf.com/blog/278-how-to-use-overleaf-with-ieee-collabratec-your-quick-guide-to-getting-started\#.xsVp6tpPkrKM9}. Please reffer the IEEEtran\_HOWTO.pdf is the complete guide of \LaTeX\ for manuscript preparation included with this stuff.
 
 
 \section{Copyright and clearance}
